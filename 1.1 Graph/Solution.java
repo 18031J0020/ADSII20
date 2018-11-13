@@ -3,6 +3,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.StringTokenizer;
+import java.util.Iterator;
+
+import java.util.NoSuchElementException;
 
 interface Graph {
     public int V();
@@ -183,7 +186,7 @@ class GraphMatrix implements Graph
 	    	
 	    }
 }
-class Solution {
+public class Solution {
    
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -204,17 +207,9 @@ class Solution {
 }
 
 
-/*************************************************************************
- *  Compilation:  javac Bag.java
- *  Execution:    java Bag < input.txt
- *
- *  A generic bag or multiset, implemented using a linked list.
- *
- *************************************************************************/
 
-import java.util.Iterator;
 
-import java.util.NoSuchElementException;
+
 
 /**
  *  The <tt>Bag</tt> class represents a bag (or multiset) of 
@@ -227,7 +222,7 @@ import java.util.NoSuchElementException;
  *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
-public class Bag<Item> implements Iterable<Item> {
+ class Bag<Item> implements Iterable<Item> {
     private int N;         // number of elements in bag
     private Node first;    // beginning of bag
 
