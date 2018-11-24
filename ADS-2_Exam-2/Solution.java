@@ -25,7 +25,8 @@ class GraphAmazon {
 
 	static void printGraph(int N, int k) {
 
-		System.out.println(N +" "+"Vertices" + " " + k + "edges");
+				System.out.println(N +" "+"vertices" + " " + k +" "+"edges");
+
 		Node n = al[0].head;
 		while (n.next != null) {
 			n = n.next;
